@@ -783,7 +783,9 @@ h4 {
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
-
+.bgc-atomic-blue {
+    background-color: #0b173dbe;
+}
 .tc-white {
     color: #F3976C!important;
 }
@@ -817,14 +819,6 @@ h4 {
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
-}
-
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
 }
 
 .bg-banniere {
