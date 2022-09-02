@@ -371,7 +371,7 @@
             }), c.getElementsByTagName = gb(function(a) {
                 return a.appendChild(e.createComment("")), !a.getElementsByTagName("*").length
             }), c.getElementsByClassName = Y.test(e.getElementsByClassName) && gb(function(a) {
-                return a.innerText = "<div class='a'></div><div class='a i'></div>", a.firstChild.className = "i", 2 === a.getElementsByClassName("i").length
+                return a.innerHTML = "<div class='a'></div><div class='a i'></div>", a.firstChild.className = "i", 2 === a.getElementsByClassName("i").length
             }), c.getById = gb(function(a) {
                 return m.appendChild(a).id = s, !e.getElementsByName || !e.getElementsByName(s).length
             }), c.getById ? (d.find.ID = function(a, b) {
