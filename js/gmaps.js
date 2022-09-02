@@ -378,7 +378,7 @@ var GMaps = (function(global) {
 
       var context_menu_element = getElementById('gmaps_context_menu');
 
-      context_menu_element.innerHTML = html;
+      context_menu_element.innerText = html;
 
       var context_menu_items = context_menu_element.getElementsByTagName('a'),
           context_menu_items_count = context_menu_items.length,
@@ -677,7 +677,7 @@ GMaps.prototype.createControl = function(options) {
 
   if (options.content) {
     if (typeof options.content === 'string') {
-      control.innerHTML = options.content;
+      control.innerText = options.content;
     }
     else if (options.content instanceof HTMLElement) {
       control.appendChild(options.content);
@@ -983,7 +983,7 @@ GMaps.prototype.drawOverlay = function(options) {
     el.style.borderWidth = "0px";
     el.style.position = "absolute";
     el.style.zIndex = 100;
-    el.innerHTML = options.content;
+    el.innerText = options.content;
 
     overlay.el = el;
 
